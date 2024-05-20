@@ -1,0 +1,109 @@
+{
+    "id": "2636cd06-576b-42c2-b6b5-4a6f00599007",
+    "created_at": "2024-05-20T20:20:17Z",
+    "update_at": "2024-05-20T20:22:44Z",
+    "global_timeout": 150,
+    "tunnel_name": "",
+    "start_time": "2024-05-20T20:21:42Z",
+    "end_time": "2024-05-20T20:22:44Z",
+    "summary": {
+        "total_time": 62000000000,
+        "execution_time": 62000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 62000000000,
+        "jobTestExecutionTime": "16s",
+        "failed_tasks": 1,
+        "total_stage_info": {
+            "postrun": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 1
+            },
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "scenario": {
+                "StageFailedPercent": 100,
+                "StagePassPercent": 0,
+                "TotalStage": 1
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=2636cd06-576b-42c2-b6b5-4a6f00599007"
+    },
+    "tasks": [
+        {
+            "id": "231f493e-9893-49f9-9cc9-8c51193cb195",
+            "os": "win",
+            "status": "failed",
+            "remark": "error in running test suites - step 1 - exit status 1",
+            "debug": false,
+            "created_at": "2024-05-20T20:20:41Z",
+            "update_at": "2024-05-20T20:22:44Z",
+            "start_time": "2024-05-20T20:21:42Z",
+            "end_time": "2024-05-20T20:22:44Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "9c0fda11-37f2-4926-ae59-5d12daa5cece",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2024-05-20T20:21:51Z",
+                    "started_at": "2024-05-20T20:21:52Z",
+                    "updated_at": "2024-05-20T20:21:59Z",
+                    "order": 2,
+                    "task_number": 0
+                },
+                {
+                    "id": "3145bd5a-dd44-4d9c-976c-a06e868c7013",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2024-05-20T20:21:59Z",
+                    "started_at": "2024-05-20T20:21:59Z",
+                    "updated_at": "2024-05-20T20:21:59Z",
+                    "order": 3,
+                    "task_number": 0
+                },
+                {
+                    "id": "c9578d8d-3073-4e4d-a520-acb84a90054d",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "single.xml",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2024-05-20T20:21:59Z",
+                    "started_at": "2024-05-20T20:22:08Z",
+                    "updated_at": "2024-05-20T20:22:42Z",
+                    "order": 4,
+                    "task_number": 0
+                },
+                {
+                    "id": "a35a5541-c875-4529-8374-e89be5dd721a",
+                    "type": "postrun",
+                    "status": "cancelled",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "",
+                    "created_at": "2024-05-20T20:21:59Z",
+                    "started_at": "2024-05-20T20:22:44Z",
+                    "updated_at": "2024-05-20T20:22:44Z",
+                    "order": 5,
+                    "task_number": 0
+                }
+            ]
+        }
+    ]
+}

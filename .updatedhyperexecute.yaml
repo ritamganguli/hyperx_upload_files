@@ -1,0 +1,127 @@
+alwaysRunPostSteps: false
+appium: false
+autosplit: true
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+captureScreenRecordingForScenarios: false
+codeDirectory: file_upload
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 1
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        avoidAppLaunch: false
+        buildName: ""
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: false
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        minorOsVersion: false
+        mobileDC: null
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        resignApp: true
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalTimeout: 150
+jobID: 08388a3a-b844-4751-b2f5-71340c21f451
+jobLabel:
+    - selenium-testng
+    - win11
+    - v1
+    - autosplit
+key: dl8Y8as59i1YyGZZUeLF897aCFvIDmaKkUU1e6RgBmlgMLIIhh
+maxRetriesPreSteps: 0
+mergeArtifacts: true
+meta: {}
+platformConfig: null
+post:
+    - cat yaml/win/v1/testng_hyperexecute_autosplit_sample.yaml
+postDirectives:
+    commands:
+        - cat yaml/win/v1/testng_hyperexecute_autosplit_sample.yaml
+    shell: ""
+    workingDirectory: ""
+pre:
+    - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+preDirectives:
+    commands:
+        - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: ""
+    name: ""
+    type: default
+runson: win11
+runtime:
+    language: java
+    version: "11"
+    addons: []
+    opts: {}
+sourcePayload:
+    verifySSL: true
+storageType: ""
+testDiscovery:
+    autosubset: true
+    command: echo single.xml
+    mode: dynamic
+    type: raw
+testRunnerCommand: mvn test `-Dmaven.repo.local=./.m2 dependency:resolve `-Dsuite=$test
+testSuiteStep: 150
+testSuiteTimeout: 150
+testSuites: []
+triggerMode: false
+tunnelOpts:
+    testsPerTunnel: 10
+uploadArtefacts:
+    - email:
+        linkValidity: 0
+        metaInfo: []
+        to: []
+      name: ExecutionSnapshots
+      path:
+        - target/surefire-reports/html/**
+user: shubhamr
+version: "0.1"
